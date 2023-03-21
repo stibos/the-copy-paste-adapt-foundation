@@ -13,12 +13,8 @@ public class ComposeTest {
         Function<Integer, Integer> g = x -> x * 2;
 
         // means f(f(g(x)))
-        Function<Integer, Integer> h = f.compose(g).andThen(f);
+        Function<Integer, Integer> h = f.compose(f).compose(g);
         System.out.println(h.apply(1));
-
-        // and alternative way to write it
-        Function<Integer, Integer> i = f.compose(f).compose(g);
-        System.out.println(i.apply(1));
 
     }
 
