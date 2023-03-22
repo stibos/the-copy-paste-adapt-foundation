@@ -1,4 +1,4 @@
-package ch.triggerhippie.java.fn;
+package ch.triggerhippie.fn;
 
 import org.junit.jupiter.api.Test;
 
